@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: whitesmoke;
     color:black;
-
+    border-radius: 15px;
 }
 .titulo-animado {
     font-size: 42px;
@@ -26,14 +26,14 @@ header {
     color: black;
     padding: 15px 0;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 nav {
     background: rgb(169, 231, 233);
     color: black;
     padding: 1px;
-  
+    border-radius: 15px;
 }
 
 nav ul {
@@ -45,6 +45,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    justify-content: center;
 }
 
 nav a {
@@ -61,7 +62,7 @@ main {
     margin: 20px auto;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   
+   border-radius: 15px;
 }
 
 section {
@@ -69,11 +70,14 @@ section {
     background-color: whitesmoke;
     padding: 0.4rem;
     border-radius: 20px;
+    justify-content: center;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background-color: #333;
     color: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
 }
