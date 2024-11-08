@@ -70,25 +70,42 @@ nav ul li a:hover {
 }
 
 
-.galeria {
+.empleados {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
-.imagen {
+.empleado {
+
     overflow: hidden;
+    display: center;
+    justify-content: center;  
+    align-items: center;      
+    height: 100%;             
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.imagen img {
+.empleado img {
+    width: 70%;  
+    max-width: 100%;  
+    height: fit-content;
+    display: block;
+    transition: transform 0.3s;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.empleado img {
     width: 100%;
     display: block;
     transition: transform 0.3s;
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.imagen img:hover {
+.empleado img:hover {
     transform: scale(1.05);
 }
 
@@ -120,4 +137,33 @@ li{
 .titulo-animado:hover {
     transform: scale(1.1); 
     color: black; 
+}
+
+.empleado {
+    position: relative;
+    overflow: hidden;
+}
+
+.empleado-img {
+    transition: transform 0.3s ease;
+}
+
+.empleado-img:hover {
+    transform: scale(1.05);
+}
+
+.empleado::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(52, 152, 219, 0.5), rgba(155, 89, 182, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.empleado:hover::after {
+    opacity: 0.5;
 }
